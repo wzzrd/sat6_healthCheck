@@ -365,7 +365,6 @@ tcp dpt:8140
 tcp dpt:9090
 tcp dpt:8080
 udp dpt:67
-udp dpt:68
 tcp dpt:53
 udp dpt:69
 udp dpt:53
