@@ -280,7 +280,7 @@ function checkGeneralSetup {
     echo "   ---------"
     while [ $i -lt $cpus ]
     do
-      echo " - CPU${i} : $(mpstat -P ALL | awk -v var=$i '{ if ($2 == var ) print $3 }' )"
+      echo " - CPU${i} : $(mpstat -P ALL | awk -v var=$i '{ if ($3 == var ) print $4 }' )"
       let i=${i}+1
     done
     echo
